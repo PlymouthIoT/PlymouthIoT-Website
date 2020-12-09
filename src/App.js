@@ -1,9 +1,24 @@
 import './App.css';
 import NavBar from "./components/navbar";
+import Home from "./components/page_home";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <NavBar />
+    <Router>
+        <NavBar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+    </Router>
   );
 }
 
