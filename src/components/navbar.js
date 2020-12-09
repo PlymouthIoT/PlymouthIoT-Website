@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 
+
 const useStyles = makeStyles({
   appbar_button: {
     border: 0,
@@ -27,7 +28,7 @@ const NavBar = () => {
           <Button component={Link} to={'/'} className={classes.appbar_button}>Home</Button>
           <Button component={Link} to={'/otherpage'} className={classes.appbar_button}>Other Page</Button>
           <Button component={Link} to={'/anotherpage'} className={classes.appbar_button}>Another Page</Button>
-          <a href='https://github.com/PlymouthIoT'><Button className={classes.appbar_button}>Github</Button></a>
+          <a href='https://github.com/PlymouthIoT' style={{ textDecoration: 'none' }}><Button className={classes.appbar_button}>Github</Button></a>
         </Toolbar>
       </Container>
     </AppBar>
