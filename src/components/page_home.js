@@ -1,18 +1,20 @@
-import Box from '@material-ui/core/Box';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
+import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
+import Paper from '@material-ui/core/Paper';
+import hoephoto from '../images/hoe.jpg';
 
 
 const Home = () => {
     return (
-      <Container style={{paddingRight: 45, paddingLeft: 45}}>
-        <Box>
-          <Typography variant="h3" color="secondary">
-            This is the page title!
-          </Typography>
-        </Box>
+      <Container style={{padding: 45}}>
+        <Grid container spacing={3}>
+          <Grid item xs={12} style={{backgroundImage: `url(${hoephoto})`}}>
+             <Typography color="secondary" variant="h1" align="center">
+                Hello World!
+             </Typography>
+          </Grid>
+        </Grid>
       </Container>
     )
 }

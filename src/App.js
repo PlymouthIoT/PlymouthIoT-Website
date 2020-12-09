@@ -8,7 +8,6 @@ const App = () => {
   return (
     <Router>
         <NavBar />
-        <div style={{padding:10}}></div>
         <Switch>
           <Route exact path="/">
             <Home />
