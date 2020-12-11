@@ -1,38 +1,130 @@
-import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
-import Container from '@material-ui/core/Container';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import {
+  AppBar, Toolbar, Typography, List, ListItem,
+  withStyles, Grid, SwipeableDrawer, Container,
+  Button
+} from '@material-ui/core';
+import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
 
 
-const useStyles = makeStyles({
+const styleSheet = {
+  list : {
+    width : 200,
+  },
+  padding : {
+    paddingRight : 30,
+    cursor : "pointer",
+  },
+
+  sideBarIcon : {
+    padding : 0,
+    color : "white",
+    cursor : "pointer",
+  },
   appbar_button: {
     border: 0,
     color: 'white',
     height: 64,
-    padding: '0 15px',
-  },
-});
-
-const NavBar = () => {
-  const classes = useStyles();
-  return (
-    <AppBar position="static" color="primary">
-      <Container>
-        <Toolbar>
-          <Typography variant="h6" style={{paddingRight: 20}}>
-            Plymouth IoT
-          </Typography>
-          <Button component={Link} to={'/'} className={classes.appbar_button}>Home</Button>
-          <Button component={Link} to={'/otherpage'} className={classes.appbar_button}>Other Page</Button>
-          <Button component={Link} to={'/anotherpage'} className={classes.appbar_button}>Another Page</Button>
-          <a href='https://github.com/PlymouthIoT' style={{ textDecoration: 'none' }}><Button className={classes.appbar_button}>Github</Button></a>
-        </Toolbar>
-      </Container>
-    </AppBar>
-  )
+    padding: '15px',
+  }
 }
 
-export default NavBar;
+class ResAppBar extends Component{
+  constructor(props){
+    super(props);
+    this.state = {drawerActivate:false, drawer:false};
+    this.createDrawer = this.createDrawer.bind(this);
+    this.destroyDrawer = this.destroyDrawer.bind(this);
+  }
+
+  componentWillMount(){
+    if(window.innerWidth <= 600){
+      this.setState({drawerActivate:true});
+    }
+
+    window.addEventListener('resize',()=>{
+      if(window.innerWidth <= 600){
+        this.setState({drawerActivate:true});
+      }
+      else{
+        this.setState({drawerActivate:false})
+      }
+    });
+  }
+
+  //Small Screens
+  createDrawer(){
+    return (
+      <div>
+        <AppBar position='relative'>
+          <Toolbar>
+            <Grid container direction = "row" justify = "space-between" alignItems="center">
+              <MenuIcon
+                className = {this.props.classes.sideBarIcon}
+                onClick={()=>{this.setState({drawer:true})}} />
+  
+              <Typography color="inherit" variant = "headline" variant="h6">Plymouth IoT</Typography>               
+              <Typography color="inherit" variant = "headline"></Typography>
+            </Grid>
+          </Toolbar>
+        </AppBar>
+
+        <SwipeableDrawer
+         open={this.state.drawer}
+         onClose={()=>{this.setState({drawer:false})}}
+         onOpen={()=>{this.setState({drawer:true})}}>
+
+           <div
+             tabIndex={0}
+             role="button"
+             onClick={()=>{this.setState({drawer:false})}}
+             onKeyDown={()=>{this.setState({drawer:false})}}>
+
+            <List className = {this.props.classes.list}>
+               <ListItem key = {1} button divider> Option 1 </ListItem>
+               <ListItem key = {2} button divider> Option 2 </ListItem>
+               <ListItem key = {3} button divider> Option 3 </ListItem>
+             </List>
+
+         </div>
+       </SwipeableDrawer>
+
+      </div>
+    );
+  }
+
+  //Larger Screens
+  destroyDrawer(){
+    const {classes} = this.props
+    return (
+      <AppBar position='relative'>
+        <Container>
+        <Toolbar>
+          <Typography variant = "headline" style={{flexGrow:1}} color="inherit" variant="h6">Plymouth IoT</Typography>
+          <Button component={Link} to={'/'} className={classes.appbar_button}>Home</Button>
+          <Typography variant = "subheading" className = {classes.padding} color="inherit" >OPTION 2</Typography>
+          <Typography variant = "subheading" className = {classes.padding} color="inherit" >OPTION 3</Typography>
+        </Toolbar>
+        </Container>
+      </AppBar>
+    )
+  }
+
+  render(){
+    return(
+      <div>
+        {this.state.drawerActivate ? this.createDrawer() : this.destroyDrawer()}
+      </div>
+    );
+  }
+}
+
+ResAppBar.propTypes = {
+  classes : PropTypes.object.isRequired
+};
+
+
+
+export default withStyles(styleSheet)(ResAppBar);
