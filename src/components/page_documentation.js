@@ -9,12 +9,12 @@ const Documentation = () => {
     return (
       <Container style={{padding: 45}}>
         <Grid container spacing={3}>
-          <Grid item xs={12}>
+          <Grid item sm={12}>
             <Typography variant="h3" gutterBottom={true}>Documentation</Typography>
           </Grid>
         </Grid>
         <Grid container spacing={3}>
-          <Grid item xs={4}>
+          <Grid item sm={4}>
             <Paper style={{padding: 5}}>
               <Typography variant="h5" gutterBottom={true}>Getting Started</Typography>
               <ul>
@@ -51,12 +51,12 @@ const Documentation = () => {
               </ul>
             </Paper>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item sm={4}>
             <Paper style={{padding: 5}}>
               <Typography variant="h5" gutterBottom={true}>Category 2</Typography>
             </Paper>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item sm={4}>
             <Paper style={{padding: 5}}>
               <Typography variant="h5" gutterBottom={true}>Category 3</Typography>
             </Paper>
