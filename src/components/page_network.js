@@ -14,12 +14,14 @@ const Network = () => {
     return (
       <Container style={{padding: 45}}>
         <Grid container spacing={3}>
-          <Grid item xs={12}>
+          <Grid item sm={12}>
             <Typography variant="h3" gutterBottom={true}>
               Network
             </Typography>
           </Grid>
-          <Grid item xs={8}>
+        </Grid>
+        <Grid container spacing={3}>
+          <Grid item sm={8}>
             <Typography variant="h4" gutterBottom={true}>
               Open &amp; Free
             </Typography>
@@ -30,13 +32,15 @@ const Network = () => {
               projects using simple development kits such as <a href="https://www.arduino.cc/" target="_blank">Arduino</a>.
             </Typography>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item sm={4}>
            <img src={ undraw_city } width="100%"/>
           </Grid>
-          <Grid item xs={4}>
+        </Grid>
+        <Grid container spacing={3}>
+          <Grid item sm={4}>
             <img src={ undraw_park } width="100%"/>
           </Grid>
-          <Grid item xs={8}>
+          <Grid item sm={8}>
             <Typography variant="h4" gutterBottom={true}>
               Established Technology
             </Typography>
@@ -49,7 +53,9 @@ const Network = () => {
               a time on a single battery reducing maintenance efforts once deployed.
             </Typography>
           </Grid>
-          <Grid item xs={8}>
+        </Grid>
+        <Grid container spacing={3}>
+          <Grid item sm={8}>
             <Typography variant="h4" gutterBottom={true}>
               Secure
             </Typography>
@@ -60,13 +66,15 @@ const Network = () => {
               internet using MQTT + TLS a popular secure messaging protocol often used in Internet of Things platforms.
             </Typography>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item sm={4}>
             <img src={ undraw_secure } width="100%"/>
           </Grid>
-          <Grid item xs={4}>
+        </Grid>
+        <Grid container spacing={3}>
+          <Grid item sm={4}>
             <img src={ undraw_connectedworld } width="100%"/>
           </Grid>
-          <Grid item xs={8}>
+          <Grid item sm={8}>
             <Typography variant="h4" gutterBottom={true}>
               A Global Network
             </Typography>
@@ -77,7 +85,9 @@ const Network = () => {
               where you can join devices to the network check the coverage maps available from <a href="https://www.ttnmapper.org" target="_blank">TTN Mapper</a>. 
             </Typography>
           </Grid>
-          <Grid item xs={8}>
+        </Grid>
+        <Grid container spacing={3}>
+          <Grid item sm={8}>
             <Typography variant="h4" gutterBottom={true}>
               Status
             </Typography>
@@ -92,7 +102,7 @@ const Network = () => {
             <br />
             <center><Button variant="contained" color="primary" component={Link} to="/network-status">Network Status</Button></center>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item sm={4}>
             <img src={ undraw_stats } width="100%"/>
           </Grid>
         </Grid>
