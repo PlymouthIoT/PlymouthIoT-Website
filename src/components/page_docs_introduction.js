@@ -10,14 +10,14 @@ const Docs_Introduction = () => {
       <Container style={{padding: 45}}>
         <Grid container spacing={3}>
           <Grid item xs={12}>
-            <Typography variant="h3" gutterBottom={true}>LoRaWAN / TTN Introduction</Typography>
+            <Typography variant="h3" gutterBottom={true}>LoRaWAN &amp; TTN Introduction</Typography>
           </Grid>
           <Grid item xs={12}>
             <Breadcrumbs aria-label="breadcrumb">
               <Link color="inherit" to="/documentation">
                 Documentation
               </Link>
-              <Typography color="textPrimary">LoRaWAN / TTN Introduction</Typography>
+              <Typography color="textPrimary">LoRaWAN &amp; TTN Introduction</Typography>
             </Breadcrumbs>
           </Grid>
         </Grid>

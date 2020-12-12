@@ -19,7 +19,7 @@ const Documentation = () => {
               <ul>
                 <li>
                   <Link to="/documentation/introduction">
-                    <Typography variant="body1">LoRaWAN / TTN Introduction</Typography>
+                    <Typography variant="body1">LoRaWAN &amp; TTN Introduction</Typography>
                   </Link>
                 </li>
                 <li>
@@ -50,21 +50,36 @@ const Documentation = () => {
               </ul>
           </Grid>
           <Grid item sm={4}>
-              <Typography variant="h5" gutterBottom={true}>Category 2</Typography>
+              <Typography variant="h5" gutterBottom={true}>Integration</Typography>
               <ul>
                 <li>
-                  <Link to="/documentation/introduction">
-                    <Typography variant="body1">Documentation List Item 1</Typography>
+                  <Link to="/documentation/nodered-installation">
+                    <Typography variant="body1">NodeRED Setup</Typography>
+                  </Link>
+                </li>
+                 <li>
+                  <Link to="/documentation/influxdb-grafana-installation">
+                    <Typography variant="body1">InfluxDB &amp; Grafana Setup</Typography>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/documentation/record-device-data">
+                    <Typography variant="body1">Record Device Data</Typography>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/documentation/visualise-device-data">
+                    <Typography variant="body1">Visualise Device Data</Typography>
                   </Link>
                 </li>
               </ul>
           </Grid>
           <Grid item sm={4}>
-              <Typography variant="h5" gutterBottom={true}>Category 3</Typography>
+              <Typography variant="h5" gutterBottom={true}>Advanced Topics</Typography>
               <ul>
                 <li>
-                  <Link to="/documentation/introduction">
-                    <Typography variant="body1">Documentation List Item 1</Typography>
+                  <Link to="/documentation/noop">
+                    <Typography variant="body1">Noop</Typography>
                   </Link>
                 </li>
               </ul>
