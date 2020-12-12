@@ -29,7 +29,7 @@ const Network = () => {
               We are building an open, free to use Internet of Things network in Plymouth to make a smarter and more connected city.
               Using a variety of sensors and other devices we can learn more about our environment, monitor infrastructure and make
               data driven decisions about our future. With a low cost to entry anyone can begin contributing with citizen science
-              projects using simple development kits such as <a href="https://www.arduino.cc/" target="_blank">Arduino</a>.
+              projects using simple development kits such as <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer">Arduino</a>.
             </Typography>
           </Grid>
           <Grid item sm={4}>
@@ -49,7 +49,7 @@ const Network = () => {
               Established Technology
             </Typography>
             <Typography variant="body1" align='justify'>
-              By utilising Long Range Wide Area Network (LoRaWAN) and <a href="https://www.thethingsnetwork.org" target="_blank">
+              By utilising Long Range Wide Area Network (LoRaWAN) and <a href="https://www.thethingsnetwork.org" target="_blank" rel="noreferrer">
               The Things Network</a> (TTN) we are consuming well established technology which is used by individual hobbyists to large
               industrial enterprises worldwide. LoRaWAN technology enables data to flow between your devices and your app via a
               mesh of gateways which bridge to the internet. Devices can be deployed in the wild with a range of up to several kilometres
@@ -87,10 +87,11 @@ const Network = () => {
               A Global Network
             </Typography>
             <Typography variant="body1" align='justify'>
-              Adoption of <a href="https://www.thethingsnetwork.org" target="_blank">The Things Network</a> (TTN) means that
+              Adoption of <a href="https://www.thethingsnetwork.org" target="_blank" rel="noreferrer">The Things Network</a> (TTN) means that
               your devices won't just work in Plymouth but anywhere with LoRaWAN gateways linked to TTN. We actively contribute
               to TTN Mapper, an open source TTN coverage database, to help keep Plymouth's coverage up to date. To find out
-              where you can join devices to the network check the coverage maps available from <a href="https://www.ttnmapper.org" target="_blank">TTN Mapper</a>. 
+              where you can join devices to the network check the coverage maps available from
+              <a href="https://www.ttnmapper.org" target="_blank" rel="noreferrer">TTN Mapper</a>. 
             </Typography>
           </Grid>
         </Grid>

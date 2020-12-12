@@ -39,7 +39,7 @@ const Documentation = () => {
                   </Link>
                 </li>
                 <li>
-                  <a href="https://www.ttnmapper.org" target="_blank">
+                  <a href="https://www.ttnmapper.org" target="_blank" rel="noreferrer">
                     <Typography variant="body1">Network Coverage</Typography>
                   </a>
                 </li>
