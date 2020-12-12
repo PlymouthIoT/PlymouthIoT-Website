@@ -7,6 +7,7 @@ import Documentation from "./components/page_documentation";
 import Docs_Introduction from "./components/page_docs_introduction";
 import Docs_Gateway from "./components/page_docs_gateway";
 import Docs_ArduinoNode from "./components/page_docs_arduino";
+import Docs_MapperNode from "./components/page_docs_mapper";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -33,6 +34,9 @@ const App = () => {
           </Route>
           <Route exact path="/documentation/arduino-hello-world-node">
             <Docs_ArduinoNode />
+          </Route>
+          <Route exact path="/documentation/ttgo-t-beam-mapper-node">
+            <Docs_MapperNode />
           </Route>
         </Switch>
         <Footer />
