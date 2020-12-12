@@ -87,7 +87,6 @@ class ResAppBar extends Component{
                <ListItem key = {1} button divider component={Link} to={'/network'}>Network</ListItem>
                <ListItem key = {1} button divider component={Link} to={'/projects'}>Projects</ListItem>
                <ListItem key = {1} button divider component={Link} to={'/documentation'}>Documentation</ListItem>
-               <ListItem key = {1} button divider component={Link} to={'/contact-us'}>Contact Us</ListItem>
              </List>
 
          </div>
@@ -109,7 +108,6 @@ class ResAppBar extends Component{
           <Button component={Link} to={'/network'} className={classes.appbar_button}>Network</Button>
           <Button component={Link} to={'/projects'} className={classes.appbar_button}>Projects</Button>
           <Button component={Link} to={'/documentation'} className={classes.appbar_button}>Documentation</Button>
-          <Button component={Link} to={'/contact-us'} className={classes.appbar_button}>Contact Us</Button>
         </Toolbar>
         </Container>
       </AppBar>
