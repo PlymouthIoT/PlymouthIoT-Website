@@ -15,7 +15,6 @@ const Documentation = () => {
         </Grid>
         <Grid container spacing={3}>
           <Grid item sm={4}>
-            <Paper style={{padding: 5}}>
               <Typography variant="h5" gutterBottom={true}>Getting Started</Typography>
               <ul>
                 <li>
@@ -49,17 +48,26 @@ const Documentation = () => {
                   </Link>
                 </li>
               </ul>
-            </Paper>
           </Grid>
           <Grid item sm={4}>
-            <Paper style={{padding: 5}}>
               <Typography variant="h5" gutterBottom={true}>Category 2</Typography>
-            </Paper>
+              <ul>
+                <li>
+                  <Link to="/documentation/introduction">
+                    <Typography variant="body1">Documentation List Item 1</Typography>
+                  </Link>
+                </li>
+              </ul>
           </Grid>
           <Grid item sm={4}>
-            <Paper style={{padding: 5}}>
               <Typography variant="h5" gutterBottom={true}>Category 3</Typography>
-            </Paper>
+              <ul>
+                <li>
+                  <Link to="/documentation/introduction">
+                    <Typography variant="body1">Documentation List Item 1</Typography>
+                  </Link>
+                </li>
+              </ul>
           </Grid>
         </Grid>
       </Container>
