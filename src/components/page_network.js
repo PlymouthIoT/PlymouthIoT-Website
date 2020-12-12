@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import undraw_connectedworld from '../images/undraw_connectedworld.png';
 import undraw_secure from '../images/undraw_secure.png';
 import undraw_city from '../images/undraw_city.png';
-import undraw_park from '../images/undraw_park.png';
+import undraw_device from '../images/undraw_device.png';
 import undraw_stats from '../images/undraw_stats.png';
 
 
@@ -33,12 +33,16 @@ const Network = () => {
             </Typography>
           </Grid>
           <Grid item sm={4}>
-           <img src={ undraw_city } width="100%"/>
+            <center>
+              <img src={ undraw_city } height="250px"/>
+            </center>
           </Grid>
         </Grid>
         <Grid container spacing={3}>
           <Grid item sm={4}>
-            <img src={ undraw_park } width="100%"/>
+            <center>
+              <img src={ undraw_device } height="250px"/>
+            </center>
           </Grid>
           <Grid item sm={8}>
             <Typography variant="h4" gutterBottom={true}>
@@ -67,12 +71,16 @@ const Network = () => {
             </Typography>
           </Grid>
           <Grid item sm={4}>
-            <img src={ undraw_secure } width="100%"/>
+            <center>
+              <img src={ undraw_secure } height="250px"/>
+            </center>
           </Grid>
         </Grid>
         <Grid container spacing={3}>
           <Grid item sm={4}>
-            <img src={ undraw_connectedworld } width="100%"/>
+            <center>
+              <img src={ undraw_connectedworld } height="250px"/>
+            </center>
           </Grid>
           <Grid item sm={8}>
             <Typography variant="h4" gutterBottom={true}>
@@ -103,7 +111,9 @@ const Network = () => {
             <center><Button variant="contained" color="primary" component={Link} to="/network-status">Network Status</Button></center>
           </Grid>
           <Grid item sm={4}>
-            <img src={ undraw_stats } width="100%"/>
+            <center>
+              <img src={ undraw_stats } height="250px"/>
+            </center>
           </Grid>
         </Grid>
       </Container>
