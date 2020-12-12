@@ -27,7 +27,7 @@ const Network = () => {
               We are building an open, free to use Internet of Things network in Plymouth to make a smarter and more connected city.
               Using a variety of sensors and other devices we can learn more about our environment, monitor infrastructure and make
               data driven decisions about our future. With a low cost to entry anyone can begin contributing with citizen science
-              projects using simple development kits such as Arduino or BBC MicroBit.
+              projects using simple development kits such as <a href="https://www.arduino.cc/" target="_blank">Arduino</a>.
             </Typography>
           </Grid>
           <Grid item xs={4}>
@@ -42,7 +42,7 @@ const Network = () => {
             </Typography>
             <Typography variant="body1" align='justify'>
               By utilising Long Range Wide Area Network (LoRaWAN) and <a href="https://www.thethingsnetwork.org" target="_blank">
-              The Things Network</a> (TTN) we are using well established technology which is used by individual hobbyists to large
+              The Things Network</a> (TTN) we are consuming well established technology which is used by individual hobbyists to large
               industrial enterprises worldwide. LoRaWAN technology enables data to flow between your devices and your app via a
               mesh of gateways which bridge to the internet. Devices can be deployed in the wild with a range of up to several kilometres
               to the nearest gateway in urban environments. Furthermore LoRaWAN devices are typically very low power lasting years at
@@ -54,7 +54,7 @@ const Network = () => {
               Secure
             </Typography>
             <Typography variant="body1" align='justify'>
-              Data is fully encrypted from the Internet of Things device deployed in the field until it reaches The Things Network using
+              Data is fully encrypted from IoT devices deployed in the field until it reaches The Things Network using
               AES key based encryption. Once at The Things Network the encrypted packet of data is decrypted and decoded into a machine
               readable object such as a JSON payload, this easy to use data structure is then made available to your application via the
               internet using MQTT + TLS a popular secure messaging protocol often used in Internet of Things platforms.
@@ -72,9 +72,9 @@ const Network = () => {
             </Typography>
             <Typography variant="body1" align='justify'>
               Adoption of <a href="https://www.thethingsnetwork.org" target="_blank">The Things Network</a> (TTN) means that
-              your devices won't just work in Plymouth but anywhere with LoRaWAN gateways linked to TTN. To find out where
-              you can join devices to the network check the coverage maps available from <a href="https://www.ttnmapper.org" target="_blank">TTN Mapper</a>. 
-              We actively contribute to TTN Mapper to keep Plymouth's coverage up to date.
+              your devices won't just work in Plymouth but anywhere with LoRaWAN gateways linked to TTN. We actively contribute
+              to TTN Mapper, an open source TTN coverage database, to help keep Plymouth's coverage up to date. To find out
+              where you can join devices to the network check the coverage maps available from <a href="https://www.ttnmapper.org" target="_blank">TTN Mapper</a>. 
             </Typography>
           </Grid>
           <Grid item xs={8}>
