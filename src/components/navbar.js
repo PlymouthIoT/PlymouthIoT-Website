@@ -83,9 +83,8 @@ class ResAppBar extends Component{
              onKeyDown={()=>{this.setState({drawer:false})}}>
 
             <List className = {this.props.classes.list}>
-               <ListItem key = {1} button divider> Option 1 </ListItem>
-               <ListItem key = {2} button divider> Option 2 </ListItem>
-               <ListItem key = {3} button divider> Option 3 </ListItem>
+               <ListItem key = {1} button divider component={Link} to={'/'}>Home</ListItem>
+               <ListItem key = {1} button divider component={Link} to={'/network'}>Network</ListItem>
              </List>
 
          </div>
@@ -104,6 +103,7 @@ class ResAppBar extends Component{
         <Toolbar>
           <Typography variant = "headline" style={{flexGrow:1}} color="inherit" variant="h6">Plymouth IoT</Typography>
           <Button component={Link} to={'/'} className={classes.appbar_button}>Home</Button>
+          <Button component={Link} to={'/network'} className={classes.appbar_button}>Network</Button>
         </Toolbar>
         </Container>
       </AppBar>
