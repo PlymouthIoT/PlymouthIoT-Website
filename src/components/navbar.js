@@ -104,8 +104,6 @@ class ResAppBar extends Component{
         <Toolbar>
           <Typography variant = "headline" style={{flexGrow:1}} color="inherit" variant="h6">Plymouth IoT</Typography>
           <Button component={Link} to={'/'} className={classes.appbar_button}>Home</Button>
-          <Typography variant = "subheading" className = {classes.padding} color="inherit" >OPTION 2</Typography>
-          <Typography variant = "subheading" className = {classes.padding} color="inherit" >OPTION 3</Typography>
         </Toolbar>
         </Container>
       </AppBar>
